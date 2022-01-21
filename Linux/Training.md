@@ -28,7 +28,7 @@ Terminal- To execue a command we use terminals.
 
 cal- Which shows the calendar
 date- displays date
-man- Manual (man cal to get help)
+man- Manual (man cal to get help).
 
 lrt- list recursive timely manner
 
