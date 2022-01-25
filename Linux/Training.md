@@ -39,6 +39,8 @@
 `rm -rf(recursive force) directory name` To delete a directory
 
 `ls -lrt`list the files in sorting manner.
+
+`pwd` present working directory - To see which directory we are 
 ## Permissions
 `permissions` rwx(read write execute)r(user)-4,w(group)-2,x(other)-1
 
@@ -71,6 +73,66 @@ default file permissions 644.
 `cd /var/log` To check all the application logs
 
 `tail -f applicatiopn name` To check application logs
+
+`wc` (word count) `wc -l filename` will help us count how many lines in that specific file `wc directoryname/*` to check directory words
+
+`grep` (global regular expression print) To search a word in a specific file or directory. 
+
+(eg:grep searchword filename)
+
+(eg: grep -i searchword filename to find both upper and lower case)
+
+(eg: grep -i searchword * which will find that word from all files)
+
+(eg: grep -v searchwork filename/* to ignore the word)
+
+To find a specific ip address or numbers we use grep '[0-9].[0-9].[0-9].[0-9]' filename/*
+
+To find which line we have oure search word is we use -n
+
+##VI Editor
+`vi editor` vi filename to open the filename in editor(esc and i to get into insert mode)
+
+(esc and u to undo)
+
+(shift :wq/x(write and quit))
+
+(esc and o to go to the next line with insert mode) 
+
+esc and /searchword to search for a particular word in vi editor (after findings we type N(next) to look for other findings under same word)
+
+esc and : %s(search)/wordname/replacingwordname/(to replace one word to another word for one place)%s(search)/wordname/replacingwordname/g(global) to replace all the words in that file.
+
+esc and : line number To go to that specific line to edit that line
+
+esc and 0: To move the cursor form last point to first
+
+esc and Shift and A: To move the cursor from front to last
+
+esc and dd: To delete the entire line
+
+esc and 2 and dd: To delete both lines in a row
+
+esc and shift+G - To go to end of the file (esc and gg to go to start of the file)
+
+esc and shift+V and using down arrow we select the text and type d to delete those lines
+
+esc and shift+V and using down arrows we select and type : (pattern will displays)/$(add something at the end of the line)/^(add something at the first of the line)/nameoftheword
+
+esc and shift+v and using down arrows we select and the : (pattern displays) s/wordname/replacingwordname/g
+
+`sed` (stream editor) To replace anything without opening file
+
+(eg: sed 's/wordname/replacingwordname/g' filename) to permanent these changes we add -i next to sed.
+
+`find` To find a specific file (eg: find . -name foldername)
+
+(eg: find . -name "*filename*") if we don't know complete filename
+
+`locate`
+
+`awk`
+
 ## Shell
 
 `Ubuntu Kernal`It is a bridge between system and the user, it explains the command we give to the system. (Shell will be the interface between user and operating system). Kernal will be inside the operating system.
