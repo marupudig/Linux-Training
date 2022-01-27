@@ -1,5 +1,17 @@
 ## Linux commands
 
+`Ubuntu Kernal`It is a bridge between system and the user, it explains the command we give to the system. (Shell will be the interface between user and operating system). Kernal will be inside the operating system.
+
+`Terminal` To execue a command we use terminals.
+
+`cal` Which shows the calendar.
+
+`date` displays date
+
+`man` Manual (man cal to get help).
+
+`lrt` list recursive timely manner
+
 `cd folder name` to open that folder path
 
 `ls` This command is to list of files
@@ -154,7 +166,7 @@ default file permissions 644.
 
 (eg: grep -i searchword * which will find that word from all files)
 
-(eg: grep -v searchwork filename/* to ignore the word)
+(eg: grep -v searchword filename/* to ignore the word)
 
 To find a specific ip address or numbers we use grep '[0-9].[0-9].[0-9].[0-9]' filename/*
 
@@ -213,23 +225,12 @@ esc and shift+v and using down arrows we select and the : (pattern displays) s/w
 
 (eg: find . -name filename -exec cp {} {}.$(backup) \;) To backup a file
 
-`locate` 
+`locate filename` To locate a file/directory data from system cache or local db. 
 
-`awk`
+`cut` (grep -i searchword filename | cut -d(delimeter)" " -f1) Linux utility tool to trim output
 
-## Shell
+`awk` is a tool like "cut" in linux (eg: cat filename | awk {print}) (eg: cat filename | awk '{print $1}' filename)
 
-`Ubuntu Kernal`It is a bridge between system and the user, it explains the command we give to the system. (Shell will be the interface between user and operating system). Kernal will be inside the operating system.
-
-`Terminal` To execue a command we use terminals.
-
-`cal` Which shows the calendar.
-
-`date` displays date
-
-`man` Manual (man cal to get help).
-
-`lrt` list recursive timely manner
 
 
 
