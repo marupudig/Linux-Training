@@ -109,9 +109,9 @@ To find a specific ip address or numbers we use grep '[0-9].[0-9].[0-9].[0-9]' f
 
 To find which line we have oure search word is we use -n
 ```
-```
-##VI Editor
 
+##VI Editor
+```
 `vi editor` vi filename to open the filename in editor(esc and i to get into insert mode)
 
 (esc and u to undo)
