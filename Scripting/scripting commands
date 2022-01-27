@@ -1,0 +1,4 @@
+To execute a script we use
+sh filename (no need of execute permissions)
+./filename (need execute permissions)
+\n is next line
