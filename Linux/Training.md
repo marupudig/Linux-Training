@@ -4,7 +4,11 @@
 
 `ls` This command is to list of files
 
-`cd ..` is to create go back to the previous folder
+`cd ..` is to create go back to the previous directory
+
+`cd` Takes us to Home directory
+
+`cd -` To go back to the previous directory
  
 `mkdir` To create a new directory 
 
@@ -193,9 +197,23 @@ esc and shift+v and using down arrows we select and the : (pattern displays) s/w
 
 `find` To find a specific file (eg: find . -name foldername)
 
-(eg: find . -name "*filename*") if we don't know complete filename
+(eg: find . -name '*filename*') if we don't know complete filename
 
-`locate`
+(eg: find / -name "*filename*") To find specific file in the whole parent files.
+
+(eg: find . -name "*filename*" -mtype f/d (file/directory) -mtime +10) To see last 10 days files
+
+(eg: find directoryname -name "filename" -exec cat {} \;) to find and open that file.
+
+(eg: find directoryname -name "filename" |xargs cat) to find and open that file.
+
+(eg: find . -type d(directory)/f(files)) To display files or directory
+
+(eg: find . -mtime/-mmin -1(find files/directories within a day or minutes))
+
+(eg: find . -name filename -exec cp {} {}.$(backup) \;) To backup a file
+
+`locate` 
 
 `awk`
 
